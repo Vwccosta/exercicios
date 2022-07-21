@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style type="text/css" src="estilos.css"></style> -->
+    <!-- <script  type="text/javascript" src="montarTabuleiro.js"></script> -->
+    <title>tabuleiro de xadrez</title>
+</head>
+<body>
+    <style>
+        body{
+    text-align: center;
+}
+.celula{
+    height: 30px;
+    width: 30px;
+    border: 2px solid gray;
+    border-style: inset;
+}
+.celulapreta{
+    background-color: black
+}
+.celulabranca{
+    background-color: white;
+}
+    </style>
+    <script>var centro = document.createElement('centro');
+        var tabuleiro = document.createElement('tabuleiro');
+        for (var a = 0; a < 8; a++){
+            var tr = document.createElement('tr');
+            for(var j = 0;j < 8;j++){
+                var td = document.createElement('td');
+                if((a+j)%2 == 0){
+                    td.setAttribute('class','celula branca');
+                    tr.appendChild(td);
+                }else{
+                    td.setAttribute('class','celulapreta');
+                    tr.appendChild(td);
+                }
+            }
+            tabuleiro.appendChild(tr);
+        }
+        centro.appendChild(tabuleiro);
+        tabuleiro.setAttribute('width','270px');
+        document.body.appendChild(centro);
+        </script>
+    <h1>Tabuleiro dee xadrez feito somente com JS</h1>
+</body>
+</html>
