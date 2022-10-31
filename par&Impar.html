@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function parOuImpar(){
+            let num = window.prompt('Digite um numero');
+            if (num %2 == 0){
+                res = document.getElementById('condicaoNumero');
+                res.innerHTML = `<p> ${num} é um numero impar</p>`
+            } else {
+                res.innerHTML = `<p> ${num} é um numero par</p>`
+            }
+        }
+    </script>
+<style>
+    button { font-size: 12pt; padding: 30px; }
+</style>
+<body>
+    <button onclick="parOuImpar()">clique para começar</button>
+    <section id="condicaoNumero"></section>
+  
+</body>
+</html>
