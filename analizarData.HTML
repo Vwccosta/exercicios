@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    function data() {
+        let meses = new Array ('jan','fev','mar','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro');
+        let semana = new Array ('domingo','seg','ter','quarta','quinta','sexta','sabado')
+        agora = new Date;
+        mes = agora.getMonth()
+        dia = agora.getDate();
+        ano = agora.getFullYear();
+        sem =  agora.getDay();
+        hora = agora.getHours();
+        minutos= agora.getMinutes();
+        segundos = agora.getSeconds();
+        res = document.getElementById('condicaoNumero');
+        res.innerHTML = `<p> Hoje é mês <strong>${meses[mes]}</strong></p>`
+        res.innerHTML += `<p> Hoje é dia <strong>${dia}</strong></p>`
+        res.innerHTML += `<p> Hoje é dia da semana <strong>${semana[sem]}</strong></p>`
+        res.innerHTML += `<p> ano <strong>${ano}</strong></p>`
+        res.innerHTML += `<p> hora <strong>${hora}</strong></p>`
+        res.innerHTML += `<p> min <strong>${minutos}</strong></p>`
+        res.innerHTML += `<p> segundos <strong>${segundos}</strong></p>`
+    }
+</script>
+<style>
+    button {
+        font-size: 12pt;
+        padding: 30px;
+    }
+</style>
+
+<body>
+    <button onclick="data()">clique para começar</button>
+    <section id="condicaoNumero"></section>
+
+</body>
+
+</html>
