@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <button onclick="inicio()">Calcular média</button>
+        <section id="resultado"></section>
+    </body>
+    <script>
+       function inicio() {
+            let nom = window.prompt('Qual o nome do aluno ?')
+            let n1 = window.prompt(`Qual foi a primeira nota de ${nom}?`)
+            let n2 = window.prompt(`Além de ${n1}, qual foi a outra nota de ${nom}?`)
+            med = (n1 + n2 )/2
+     
+            let res = window.document.getElementById('resultado');
+            res.innerHTML =`<p>A média final foi ${med}`
+        }
+    </script>
+</html>
