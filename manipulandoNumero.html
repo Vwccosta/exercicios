@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <button onclick="inicio()">Clique para começar</button>
+        <section id="resultado"></section>
+    </body>
+    <script>
+       function inicio() {
+            let numero = window.prompt('Digite um numero ?');
+            console.log(numero);
+            let multiplicacao = numero*2;
+            console.log(multiplicacao);
+            let metade =  numero / 2;
+            console.log(metade);
+
+            let res = window.document.getElementById('resultado');
+            res.innerHTML =`<p>O dobro de ${numero} é ${multiplicacao} e metade é ${metade}!`
+        }
+    </script>
+</html>
