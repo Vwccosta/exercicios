@@ -1,0 +1,28 @@
+
+<html lang="en">
+<script>
+    function calcularMedia(){
+        let nome = window.prompt('Digite o nome do aluno');
+        let n1 = window.prompt('Digite a primeira nota');
+        let n2 = window.prompt('Digite a segunda nota');
+        let media = (n1+n2) / 2;
+       if(media < 6){
+        res = document.getElementById('text');
+        res.innerHTML = `<p>Sua nota foi muito baixa<p>`
+       }else{
+        res = document.getElementById('text');
+        res.innerHTML = `<p>Sua nota foi muito excelente<p>`
+       }
+    }
+</script>
+<head>
+   
+</head>
+<body>
+    <button onclick="calcularMedia()">calcular media</button>
+    <section id="text"></section>
+<section>
+    
+</section>
+</body>
+</html>
