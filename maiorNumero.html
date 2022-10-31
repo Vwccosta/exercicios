@@ -1,0 +1,26 @@
+
+<html lang="en">
+<script>
+    function calcularMedia(){
+        let n1 = window.prompt('Digite o primeiro numero');
+        let n2 = window.prompt('Digite o segundo numero');
+       if(n1 < n2){
+        res = document.getElementById('text');
+        res.innerHTML = `<p>${n1} é menor que ${n2}<p>`
+       }else{
+        res = document.getElementById('text');
+        res.innerHTML = `<p>${n2} é menor que ${n1}<p>`
+       }
+    }
+</script>
+<head>
+   
+</head>
+<body>
+    <button onclick="calcularMedia()">calcular menor</button>
+    <section id="text"></section>
+<section>
+    
+</section>
+</body>
+</html>
