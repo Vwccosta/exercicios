@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    function data() {
+        saida = new Date;
+        res = document.getElementById('condicaoNumero');
+        res.innerHTML = `<p> Hoje é dia <strong>${saida}</strong></p>`
+    }
+</script>
+<style>
+    button {
+        font-size: 12pt;
+        padding: 30px;
+    }
+</style>
+
+<body>
+    <button onclick="data()">clique para começar</button>
+    <section id="condicaoNumero"></section>
+
+</body>
+
+</html>
