@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let now = new Date;
+        let Year = now.getFullYear();
+        function calcularIdade (){
+            let anoNascimento = window.prompt('Digite o ano em que nasceu');
+            let idade = Year - anoNascimento;
+            res = document.getElementById('section')
+            res.innerHTML = `<p>Quem nasceu em 2002 vai completar ${idade} anos em ${Year}`
+        }
+    </script>
+    <button onclick="calcularIdade()">
+        Calcular idade
+    </button>
+    <section id="section">
+
+    </section>
+</body>
+</html>
