@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <button onclick="inicio()">Vamos começar</button>
+        <section id="result"></section>
+    </body>
+    <script>
+       function inicio() {
+            let numero = window.prompt('Digite um numero?')
+            
+            let res = document.querySelector('section#result')
+            res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(numero)}</p>`
+
+
+            res.innerHTML += `<p> O valor inteiro é ${Math.trunc(numero)}</p>`
+            res.innerHTML += `<p> O valor inteiro mais proximo é ${Math.round(numero)}</p>`
+
+            res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(numero)}</p>`
+            res.innerHTML += `<p> A sua raiz cubica é ${Math.cbrt(numero)}</p>`
+
+            res.innerHTML += `<p> O valor de ${numero}<sup>2</sup> é ${Math.pow(numero ,2)}</p>`
+            res.innerHTML += `<p> O valor de ${numero}<sup>3</sup> é ${Math.pow(numero ,3)}</p>`
+
+        }
+    </script>
+</html>
